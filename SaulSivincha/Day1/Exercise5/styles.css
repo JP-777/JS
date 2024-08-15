@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: auto;
+    grid-gap: 10px; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto; 
+    grid-template-areas: 
+        "dolars button"
+        "euros buttonDelete";
+}
+
+legend {
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+
+.dolars {
+    grid-area: dolars;
+}
+
+.euros {
+    grid-area: euros;
+}
+
+.button {
+    grid-area: button;
+}
+
+.buttonDelete {
+    grid-area: buttonDelete;
+}
